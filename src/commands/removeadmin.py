@@ -36,8 +36,8 @@ async def removeadmin(interaction, user_id: str):
         if user:
             try:
                 embed = nextcord.Embed(
-                    title="Nexus moderation",
-                    description="You have been removed from the Nexus admins.",
+                    title="Ghostphones moderation",
+                    description="You have been removed from the Ghostphones admins.",
                     color=nextcord.Color.red()
                 )
                 await user.send(embed=embed)
