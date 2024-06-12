@@ -13,8 +13,8 @@ async def ban(ctx, user_id: str, *, reason: str):
     try:
         user = await bot.fetch_user(user_id)
         embed = nextcord.Embed(
-            title="Nexus",
-            description=f"You have been banned from using nexus for the following reason: {reason}",
+            title="ACCOUNT BANNED",
+            description=f"You have been banned from using Ghostphones for the following reason: {reason}",
             color=nextcord.Color.red()
         )
         await user.send(embed=embed)
@@ -26,4 +26,4 @@ async def ban(ctx, user_id: str, *, reason: str):
     with open("banned_users.txt", "a", encoding="utf-8") as file:
         file.write(f"{user_id}\n")
     
-    await ctx.send(f"User {user_id} has been banned from using Nexus for the following reason: {reason}")
+    await ctx.send(f"User {user_id} has been banned from using Ghostphones for the following reason: {reason}")
