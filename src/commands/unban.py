@@ -1,4 +1,4 @@
-@bot.slash_command(description="Unban a user from using Nexus")
+@bot.slash_command(description="Unban a user from using Ghostphones")
 async def unban(ctx, user_id: str):
     if ctx.user.id not in admin_ids:
         await ctx.send("You need to be an administrator to use this command.")
@@ -23,8 +23,8 @@ async def unban(ctx, user_id: str):
     try:
         user = await bot.fetch_user(user_id)
         embed = nextcord.Embed(
-            title="Nexus",
-            description="You have been unbanned from using nexus",
+            title="APPEAL GRANTED",
+            description="You have been unbanned from using Ghostphones",
             color=nextcord.Color.green()
         )
         await user.send(embed=embed)
