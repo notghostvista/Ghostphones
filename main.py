@@ -156,13 +156,13 @@ async def send_embed(message):
         if message.author.id in admin_ids or message.author.id in owner_ids:
             embed.color = nextcord.Color.red()
 
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1090262735478071360/1238197066271031376/NexusChat.png?ex=663e6861&is=663d16e1&hm=9715dd1020c504b6f14bb8b1de8b8c60b0376caadd4ace3b2bc71662b748749f&")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1224802914447659058/1249448360625180702/New_Project_2.png?ex=666756f6&is=66660576&hm=7fdb658a981345b0a2951d79d02d88f37b54772b5ee1d8c011255cf35e65cbdc&")
         
         icon_url_guild = message.guild.icon.url if message.guild.icon else None
         if icon_url_guild:
-            embed.set_footer(text=f"{server.name} - Nexus Solar - {format_timestamp(message.created_at.timestamp())}", icon_url=icon_url_guild)
+            embed.set_footer(text=f"{server.name} - Ghostphones - {format_timestamp(message.created_at.timestamp())}", icon_url=icon_url_guild)
         else:
-            embed.set_footer(text=f"{server.name} - Nexus Solar - {format_timestamp(message.created_at.timestamp())}")
+            embed.set_footer(text=f"{server.name} - Ghostphones - {format_timestamp(message.created_at.timestamp())}")
             
         if message.reference and message.reference.message_id:
             referenced_message = await message.channel.fetch_message(message.reference.message_id)
